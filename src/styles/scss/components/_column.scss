@@ -1,0 +1,92 @@
+.column {
+    @include flex_align;
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__head-title {
+        font-size: 14px;
+        color: $light-blue;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title--big {
+        margin-bottom: 2rem;
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+        color: $Dunkel-Blau;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+    }
+
+    &__title--big._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition-duration: 1.5s;
+    }
+
+    &__title--big--white {
+        margin-bottom: 2rem;
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+        color: $color-white;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+    }
+
+    &__title--big--white._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition-duration: 1.5s;
+    }
+
+    &__title {
+        font-size: 2rem;
+        line-height: 3rem;
+        color: $Dunkel-Blau;
+        margin-bottom: 2.4rem;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+    }
+
+    &__title._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition-duration: 1.5s;
+    }
+
+    &__description {
+        flex: 1 1 auto;
+        color: $light-blue;
+        padding-right: 10rem;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+    }
+
+    &__description._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition-duration: 1.5s;
+        transition: all 0.8s ease 1s;
+    }
+
+    &__link {
+
+        transform: translate(0px, 120%);
+        opacity: -0;
+        transition: all 0.8s ease 0s;
+
+    }
+
+    &__link._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition-duration: 1.5s;
+        transition: all 0.8s ease 1.5s;
+    }
+}

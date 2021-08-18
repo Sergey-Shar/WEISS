@@ -1,0 +1,35 @@
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 150px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $color-white;
+    }
+
+    &__container {
+        position: relative;
+        @include flex-justify;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 3;
+
+    }
+
+    &__link {
+        position: relative;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,20 @@
+.contacts {
+    background: linear-gradient(to top, $Ultra-light-grey 55%, #ffffff 45%);
+
+    &__container {
+        @include flex-justify;
+
+        padding-top: 20rem;
+    }
+
+    &__column {
+        margin-top: 18rem;
+        margin-bottom: 10.1rem;
+        width: 327px;
+        max-height: 244px;
+    }
+
+    &__column--description {
+        padding-right: 2rem;
+    }
+}

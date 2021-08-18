@@ -1,0 +1,42 @@
+
+html{
+    font-size: 10px;
+}
+
+.wrapper{
+    overflow: hidden;
+   
+    @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;700&display=swap');
+    
+    & img{
+        max-width: 100%;
+        object-fit: cover;
+    }
+    & h2{
+        font-family: 'STIX Two Text', serif;
+        font-weight: bold ;
+    }
+    & h3 {
+        font-family:'STIX Two Text', serif;
+        font-weight: normal;
+    }
+    & p{
+        font-size: 1.6rem;
+        line-height: 1.5em;  
+        font-family:'STIX Two Text', serif;
+        font-weight: lighter;
+    }
+    & a{
+        font-family:'STIX Two Text', serif;
+        font-weight: normal;  
+        
+    }
+   
+}
+
+.container{
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+

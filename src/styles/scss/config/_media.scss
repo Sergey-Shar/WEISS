@@ -1,0 +1,280 @@
+@media (max-width:992px) {
+  html {
+    font-size: 8px;
+  }
+
+  .container {
+    max-width: 750px;
+  }
+
+  .projects__container {
+    justify-content: center;
+    flex: 1 1 auto;
+    background: url("../styles/../image/projects_img/Image.png") 0 0/100% no-repeat;
+  }
+
+  .projects__image {
+    display: none;
+  }
+
+  .column__description {
+    flex: 0 0 auto;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+  }
+
+  .services__title-text {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .services__column {
+    max-width: 500px;
+    padding-left: 1rem;
+  }
+
+  .about {
+    background: $Ultra-light-grey;
+  }
+
+  .about__image {
+    transform: translate(3.5%, 0);
+  }
+
+  .about__column {
+    margin-left: 5rem;
+  }
+
+  .blog__link {
+    margin-top: 6.5rem;
+  }
+
+  .contacts__container {
+    background: url("../styles/../image/contacts_img/Image.png") 0 0/100% no-repeat;
+  }
+
+  .contacts__image {
+    display: none;
+  }
+
+  .contacts__column {
+    align-items: center;
+    width: 100%;
+    margin-top: 20rem;
+  }
+
+  .contacts__column--description {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  html {
+    font-size: 6px;
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  .header__link {
+    display: none;
+  }
+
+  .header {
+    height: 100px;
+
+    &::before {
+      background: $Ultra-light-grey;
+    }
+
+  }
+
+  .nav__burger {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 30px;
+    height: 20px;
+
+    & span {
+      position: absolute;
+      background: $Dunkel-Blau;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background: $Dunkel-Blau;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &.active::before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+
+    &.active::after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+
+    &.active span {
+      transform: scale(0);
+    }
+
+  }
+
+  .nav {
+    position: fixed;
+    z-index: 1;
+    @include flex_align;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-white;
+    padding: 130px 0 0 0;
+    transition: all 0.7s ease 0s;
+
+    & a {
+      margin: 0 0 20px 15px;
+    }
+
+    &.active {
+      top: 0;
+    }
+
+    &__link {
+      padding-left: 0;
+    }
+
+    &__link--orange::after {
+      display: none;
+    }
+  }
+}
+
+@media(max-width:768px) {
+
+  // .link__link--icon {
+  //   &::after {
+  //     top: 0.8em;
+  //   }
+
+  //   &::before {
+  //     bottom: 0.8em;
+  //   }
+  // }
+
+  .projects {
+    padding-top: 100px;
+  }
+
+  .about__image {
+    transform: translate(0%, -70%);
+    max-width: 250px;
+    max-height: 270px;
+  }
+
+  .about__column-line::after {
+    width: 50%;
+  }
+
+  .about__container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .about__content {
+    flex-wrap: wrap;
+  }
+
+  .blog__container {
+    padding-top: 1rem;
+  }
+
+  .blog__last-messages {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .blog__columns {
+    flex-wrap: wrap;
+  }
+
+  .contacts__container {
+    padding-top: 10rem;
+  }
+
+  .contacts__column {
+    margin-top: 2rem;
+  }
+
+  .contacts__column--description {
+    display: none;
+  }
+
+  .footer {
+    height: 150px;
+  }
+
+  .footer__logo {
+    margin-top: 0.5rem;
+  }
+
+  .footer__boss {
+    display: none;
+  }
+
+  .footer__address {
+    display: none;
+  }
+
+  .footer__mini-text {
+    display: none;
+  }
+
+  .footer__line {
+    margin-top: 3rem;
+  }
+}
+
+@media(max-width:755px) {
+  .services__columns {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -100rem;
+  }
+
+  .services__column {
+    margin-right: 100rem;
+    align-items: center;
+  }
+
+  .services__column--description {
+    display: none;
+  }
+}

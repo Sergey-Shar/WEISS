@@ -1,0 +1,43 @@
+.blog {
+
+    background: $color-white;
+
+    &__container {
+        padding-top: 13rem;
+    }
+
+    &__content {
+        @include flex-justify;
+        flex-wrap: wrap;
+
+    }
+
+    &__title-text {
+        max-width: 480px;
+    }
+
+    &__link {
+        margin-top: 9rem;
+    }
+
+    &__last-messages {
+        margin-top: 8rem;
+        margin-bottom: 3.2rem;
+        font-size: 14px;
+        color: $light-blue;
+    }
+
+    &__columns {
+        @include flex-justify;
+
+    }
+
+    &__column {
+        max-width: 361px;
+    }
+
+    &__column--description {
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
+}

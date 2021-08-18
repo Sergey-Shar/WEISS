@@ -1,0 +1,78 @@
+.link {
+  transition-duration: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+  }
+
+  &__link {
+    @include link_link;
+
+    &:hover {
+      transform: scale(1.1);
+      transition-duration: 1s;
+    }
+  }
+
+  &__link--clear {
+    @include link_link--clear;
+  }
+
+  &__link--white {
+    @include link_link--white;
+  }
+
+  &__link--icon {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0.8em;
+      right: 15%;
+      transform: rotate(45deg);
+      background: $color-white;
+      height: 0.1rem;
+      width: 8px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0.8em;
+      right: 15%;
+      transform: rotate(-45deg);
+      background: $color-white;
+      height: 0.1rem;
+      width: 8px;
+    }
+
+  }
+
+  &__link--icon--orange {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0.8em;
+      right: 15%;
+      transform: rotate(35deg);
+      background: $color-orange;
+      height: 0.1rem;
+      width: 8px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0.8em;
+      right: 15%;
+      transform: rotate(-35deg);
+      background: $color-orange;
+      height: 0.1rem;
+      width: 8px;
+    }
+  }
+}

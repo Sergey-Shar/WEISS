@@ -1,0 +1,83 @@
+.footer {
+    background: $Dunkel-Blau;
+    height: 304px;
+    max-width: 100%;
+
+    &__content {
+        @include flex-justify;
+        padding-top: 6.4rem;
+    }
+
+    &__logo {
+        margin-top: 4rem;
+
+    }
+
+    &__contacts {
+        @include flex-justify;
+        flex: 1 1 auto;
+        max-width: 412px;
+
+    }
+
+    &__boss {
+        max-width: 157px;
+
+        & h2,
+        p {
+            font-size: 14px;
+            color: $color-white;
+            line-height: 2.6rem;
+            margin-top: 0.8rem;
+        }
+    }
+
+    &__address {
+        max-width: 109px;
+
+        & h2,
+        p {
+            font-size: 14pz;
+            color: $color-white;
+            line-height: 2.6rem;
+            margin-top: 0.8rem;
+        }
+    }
+
+    &__line {
+        position: relative;
+        margin-top: 6.4rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: $color-white;
+            height: 2px;
+            width: 100%;
+
+        }
+    }
+
+    &__mini-text {
+        @include flex-justify;
+        width: 173px;
+        margin-top: 11rem;
+        color: $color-white;
+    }
+
+    &__line-mini {
+        position: relative;
+
+    }
+}
+
+.footer__line-mini::after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    right: -5px;
+    transform: rotate(90deg);
+    background: $color-white;
+    width: 10px;
+    height: 2px;
+}

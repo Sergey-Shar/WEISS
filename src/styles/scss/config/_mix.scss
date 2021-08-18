@@ -1,0 +1,29 @@
+
+@mixin flex-justify {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex_align {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin link_link {
+    padding: 0.5em 3em 0.5em 0.5em;
+    font-size: 1.7rem;
+    background: $color-orange;
+    color: $color-white;
+}
+
+@mixin link_link--clear {
+    padding: 0.5em 3em 0.5em 0 ;
+    font-size: 1.7rem;
+    color:$color-orange;
+}
+
+@mixin link_link--white {
+    padding: 0.5em 3em 0.5em 0 ;
+    font-size: 1.6rem;
+    color:$color-white;
+}
