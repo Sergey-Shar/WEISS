@@ -3,6 +3,9 @@
 ## Task :bulb:
 
 * Layout from scratch.
+* Responsive and adaptive layout.
+* BEM methodology
+* Properly organized file structure
 
 ## Tools :hammer:
 
